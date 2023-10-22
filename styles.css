@@ -1,0 +1,372 @@
+/* Iniciacion */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/* -------------------------------------------------------- PAGINA -------------------------------------------------------- */
+
+/* Principal */
+
+header {
+    background-color: #2D2A29;
+    width: 100%;
+    padding: 5px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: auto;
+}
+
+header h1 {
+    display: inline-block;
+    font-family: Arial;
+    font-size: 60px;
+    line-height: 80px;
+    font-weight: bold;
+}
+
+header nav {
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    line-height: 80px;
+}
+
+#check {
+    display: none;
+}
+
+.checkbtn {
+    font-size: 25px;
+    float: right;
+    line-height: 80px;
+    cursor: pointer;
+    /* Para hacer el cambio de la forma del puntero cuando esté sobre este */
+    display: none;
+}
+
+main {
+    padding-top: 10px;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    clear: both;
+}
+
+footer {
+    background-color: #2D2A29;
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+    padding: 12px;
+    clear: both;
+}
+
+/* ----- Seccion de introduccion con logo ----- */
+
+.introduccion {
+    width: 70%;
+    height: 550px;
+    margin: auto;
+    margin-bottom: -100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.text h2, #text_intro{
+    width: 300px;
+    text-align: justify;
+}
+
+
+
+/* ----- Seccion de abajo temporada 2022----- */
+
+.temporada {
+    background-color: white;
+    text-align: center;
+    padding: 0;
+    height: auto;
+}
+
+.temporada p, h3{
+    text-align: justify;
+}
+
+.sec-piloto {
+    display: inline-block;
+    margin: 10px 30px 20px 30px;
+}
+
+.sec-piloto img {
+    height: 300px;
+    width: 300px;
+}
+
+.sec-piloto p {
+    height: auto;
+    width: 300px;
+}
+
+.sec-escuderia {
+    display: inline-block;
+    margin: 10px 30px 20px 30px;
+}
+
+.sec-escuderia img {
+    height: 300px;
+    width: 300px;
+}
+
+.sec-escuderia p {
+    height: auto;
+    width: 300px;
+}
+
+
+/* ----- Estilos de texto ----- */
+
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.fuente-clara {
+    color: #eeeeee;
+}
+
+.fuente-oscura {
+    color: #22211f;
+}
+
+.fuente-acento {
+    color: #C70000;
+}
+
+/* ----- Imagenes ----- */
+
+.imglogo {
+    height: auto;
+    margin: 0;
+    padding: 12px;
+}
+
+.banner {
+    height: 500px;
+    width: 100%;
+}
+
+
+/* ----- Color texto de Links ----- */
+
+nav a {
+    color: white;
+}
+
+nav a:hover {
+    color: #1bf7de;
+}
+
+footer a {
+    color: white;
+}
+
+/* -------------------------------------------------------- FORMULARIO -------------------------------------------------------- */
+
+.form-header {
+    text-align: center;
+    background-color: white;
+    border: 1px solid #96989b;
+    border-radius: 3px;
+    width: 30%;
+    margin: 10px auto;
+    padding: 1px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-header h1 {
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.form-header h1, p{
+    text-align: center;
+}
+
+/* ------------- Formulario ------------- */
+
+.formulario {
+    width: 80%;
+    padding: 10px;
+    margin: 30px 0 40px 0;
+}
+
+.form-row {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"] {
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+}
+
+.form-row label {
+    margin-bottom: 3px;
+    text-align: initial;
+}
+
+.form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+
+
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+
+
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+
+
+    width: 100%;
+}
+
+.form-row button {
+    font-size: 16px;
+    font-weight: bold;
+
+
+    color: #ffffff;
+    background-color: #5995da;
+
+
+    border: none;
+    border-radius: 3px;
+
+
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+.form-row button:hover {
+    background-color: #76aeed;
+}
+
+.form-row button:active {
+    background-color: #407fc7;
+}
+
+/* -------------------------------------------------------- TAMAÑO WEB -------------------------------------------------------- */
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 800px) {
+
+    header {
+        height: fit-content;
+    }
+
+    .checkbtn {
+        display: block;
+        color: aliceblue;
+    }
+
+    .navbar ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #535353;
+        text-align: center;
+
+        top: 90px;
+        left: 100%;
+        transition: all 0.5s;
+    }
+
+    #check:checked~ul {
+        /* Para seleccionar los elementos que vienen después del item #check */
+        left: 0;
+        display: block;
+    }
+
+    .navbar ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    .navbar ul li a {
+        font-size: 20px;
+    }
+
+    #check:checked~.checkbtn {
+        color: #535353;
+    }
+
+    /* ACTIVE */
+    .navbar.active {
+        height: 100vh;
+    }
+
+    .navbar.active ul.menu {
+        opacity: 1;
+    }
+
+    .introduccion {
+        flex-direction: column;
+        margin-top: 80px;
+    }
+
+    .text {
+        text-align: center;
+    }
+
+    .banner {
+        margin-top: 58px;
+        height: auto;
+        width: 100%;
+    }
+
+    .form-header {
+        text-align: center;
+        background-color: white;
+        border: 1px solid #96989b;
+        border-radius: 3px;
+        width: 60%;
+        margin: 10px auto;
+        padding: 1px;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+

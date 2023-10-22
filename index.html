@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!-- Iniciacion de la pagina -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widh=device-width, initial-scale=1.0">
+    <title>Jhoynner Carrillo - Portafolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="fuente-acento"> FORMULA 1 </h1>
+        <nav class="navbar">
+            <input type="checkbox" id="check" />
+            <label for="check" class="checkbtn">
+              <i class="fa-solid fa-bars"></i>
+            </label>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html">Escuderias</a></li>
+                <li><a href="index.html">Pilotos</a></li>
+                <li><a href="index.html">Circuitos</a></li>
+                <li><a href="index.html">Programacion</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <main>
+        <div class="introduccion">
+            <div class="text">
+                <h2>Introducción</h2>
+                <p id="text_intro">
+                    Esta página esta diseñada para las personas que apenas estan comenzando en el mundo de la Formula 1.
+                    En esta pagina encontraran informacion referente a las escuderias actuales, los pilotos que las conforman, 
+                    tambien informacion acerca de los distintos circuitos y la programacion que se realiza durante una semana de carreras
+                </p>
+            </div>
+            <img class="imglogo" src='img/Logof1.webp' width="400" height="300" />
+        </div>
+
+        <div>
+            <img class="banner" src='img/Formula1.jpg' width="500" height="300" />
+        </div>
+    </main>
+
+    <section>
+        <div class="temporada">
+            <h2>TEMPORADA 2022</h2>
+            <div class="sec-piloto">
+                <img src='img/MaxVestappen.avif'/>
+                <h3>Piloto Ganador</h3>
+                <p>Max Verstappen es el piloto ganador del Mundial de Pilotos 2022</p>
+            </div>
+            <div class="sec-escuderia">
+                <img src='img/RedBull.jpg'/>
+                <h3> Escuderia Ganadora</h3>
+                <p>La escuderia Red Bull Racing es la ganadora del Mundial de Constructores 2022</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="form-header">
+        <h1>Contacto</h1>
+        <p><em>¡Esperamos tu consulta!</em></p>
+
+        <form action="" method="get" class="formulario" id="form">
+            <div class="form-row">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" name="nombre" type="text" />
+            </div>
+            <div class="form-row">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="pepe@gmail.com" required/>
+            </div>
+            <div class="form-row">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje"></textarea>
+            </div>
+            <div class="form-row">
+                <button>Enviar</button>
+            </div>
+            <p class="alertas" id="alertas"></p>
+        </form>
+    </section>
+
+    <footer class="fuente-clara">
+        <div>Creado por Jhoynner Carrillo</div>
+        <a href="https://wa.me/573176377202"> Redes Sociales </a>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
